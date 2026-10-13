@@ -15,3 +15,12 @@
 
 # macOS
 .DS_Store
+
+# Private application records and personal photos stay local.
+/postdoc-applications/
+/industry-applications/opportunity-search/
+/industry-applications/canchentech/*.jpg
+
+# Python caches
+__pycache__/
+*.pyc

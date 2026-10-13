@@ -1,0 +1,18 @@
+开一个“你问我答”帖。
+
+我的路径比较绕：
+本科是生物科学，做过植物相关 wet lab；
+后来转到 bioinformatics / computational biology；
+博士阶段主要做 single-cell、spatial transcriptomics、tumor microenvironment 和 multi-omics；
+现在也在探索 AI4S / biomedical agents 这类方向。
+
+如果你正在考虑：
+1. wet lab 怎么转生信；
+2. 生物背景学 Python / R / 深度学习要怎么开始；
+3. 生信博士日常到底在做什么；
+4. spatial omics、AI4S、biomedical agents 值不值得入坑；
+5. 读博、发文章、找 postdoc / exchange opportunity；
+
+都可以在评论区随便问。我会尽量从 PhD student 的真实视角回答，不包装成标准答案。
+
+#生物信息 #AI4S #博士日常 #科研日常 #Wetlab转生信 #ComputationalBiology #SpatialTranscriptomics #你问我答

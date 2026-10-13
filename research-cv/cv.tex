@@ -40,10 +40,10 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[10pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.1cm, top=.65cm, right=1.1cm, bottom=.9cm, footskip=.35cm}
 
 \usepackage[font=footnotesize]{subcaption}
 \usepackage{enumitem}
@@ -60,6 +60,7 @@
 \usepackage{pifont}
 % \usepackage{fontawesome5}
 \captionsetup[figure]{labelformat={default},labelsep=period,name={Fig.}}
+\setlist[itemize]{leftmargin=*, itemsep=0.1em, topsep=0.1em}
 
 \Crefname{section}{Sec.}{Secs.} 
 \Crefname{figure}{Fig.}{Figs.} 
@@ -100,6 +101,48 @@
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvHeaderAfterSocialSkip}{2mm}
+\renewcommand{\acvSectionTopSkip}{1.6mm}
+\renewcommand{\acvSectionContentTopSkip}{1.2mm}
+\renewcommand{\acvHeaderAfterNameSkip}{-.5mm}
+\renewcommand*{\sectionstyle}[1]{{\fontsize{15pt}{1em}\bodyfont\bfseries\color{text} #1}}
+\renewcommand*{\subsectionstyle}[1]{{\fontsize{11.5pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
+\renewcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\renewcommand*{\honortitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+\renewcommand*{\skilltypestyle}[1]{{\fontsize{9.7pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+\renewcommand*{\makecvheader}[1][C]{%
+  \begin{center}
+    {\fontsize{20pt}{1em}\headerfont\bfseries\color{text} Curriculum Vitae}\\[1.4mm]
+    {\fontsize{14pt}{1em}\headerfont\color{text} Yuxiang Lin}\\[1.2mm]
+    {\fontsize{7pt}{1em}\headerfont\color{text}
+      \faEnvelope\acvHeaderIconSep E-mail: \href{mailto:linyuxiang@stu.xmu.edu.cn}{linyuxiang@stu.xmu.edu.cn}
+      \quad\textbar\quad
+      \faOrcid\acvHeaderIconSep ORCID: \href{https://orcid.org/0000-0001-8854-2995}{0000-0001-8854-2995}
+      \quad\textbar\quad
+      \faUser\acvHeaderIconSep Homepage: \href{https://lenislin.github.io/}{https://lenislin.github.io/}
+    }\\[.6mm]
+    {\fontsize{7pt}{1em}\headerfont\color{text}
+      \faGithub\acvHeaderIconSep GitHub: \href{https://github.com/LenisLin}{https://github.com/LenisLin}
+      \quad\textbar\quad
+      \faGraduationCap\acvHeaderIconSep Google Scholar: \href{https://scholar.google.com/citations?user=TgJ6W0YAAAAJ\&hl=en}{https://scholar.google.com/citations?user=TgJ6W0YAAAAJ}
+    }
+  \end{center}
+  \vspace{1.6mm}
+}
+\renewenvironment{cvskills}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-2.0mm}
+  \begin{center}
+    \setlength\tabcolsep{1ex}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.78}}}
+}{%
+    \end{tabular*}
+  \end{center}
+}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -107,15 +150,15 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo{./examples/profile.png}
-\name{Hyungtae}{Lim}
-\position{Robotics Researcher{\enskip\cdotp\enskip}Field Robotics Engineer}
-\address{Cambridge, MA, USA}
+\name{Yuxiang}{Lin}
+% \position{Ph.D. Candidate{\enskip\cdotp\enskip}Computational Biology and Bioinformatics}
+% \address{Xiamen University, Xiamen, Fujian, China}
 
-\email{shapelim [at] mit [dot] edu}
+% Contact information is rendered by the custom header above.
+% \email{linyuxiang@stu.xmu.edu.cn}
 %\dateofbirth{January 1st, 1970}
-\homepage{limhyungtae.github.io/hyungtae-lim/}
-\github{limhyungtae}
-\linkedin{hyungtae-lim}
+% Full profile URLs are shown through \extrainfo below.
+% \linkedin{}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -123,49 +166,39 @@
 % \reddit{reddit-id}
 % \medium{medium-id}
 % \kaggle{kaggle-id}
-\googlescholar{S1A3nbIAAAAJ}{Google Scholar}
+% \orcid{0000-0001-8854-2995}
+% \googlescholar{TgJ6W0YAAAAJ}{Google Scholar}
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
+% \extrainfo{}
 
 \newif\ifshowcontent % 새로운 조건변수 생성
 \showcontenttrue % regarding link
 
-\quote{``Towards Pervasive Robotics and Artificial Intelligence''}
+% \quote{Computational biology, biomedical AI, and multi-omics for medicine}
 
 
 %-------------------------------------------------------------------------------
 \begin{document}
+\setlength{\parskip}{2pt}
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Hyungtae Lim~~~·~~~Curriculum Vitae}
-  {\thepage}
+% Footer intentionally omitted for a compact one-page CV.
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/aboutme.tex}
 \input{cv/education.tex}
-%\input{cv/skills.tex}
-\input{cv/work_experience}
-\input{cv/research_project_experience}
-\newpage
+\input{cv/research_interests.tex}
 \input{cv/publications}
-\input{cv/teaching}
-% \cvsection{Presentation}
-% \input{cv/presentation.tex}
+\input{cv/academic_service.tex}
 \input{cv/honors.tex}
-% \input{cv/certificates.tex}
-% \input{cv/presentation.tex}
-% \input{cv/writing.tex}
-\input{cv/committees.tex}
+\input{cv/skills.tex}
 
 %\bibliographystyle{IEEETran}
 %\nobibliography{cv/ref}

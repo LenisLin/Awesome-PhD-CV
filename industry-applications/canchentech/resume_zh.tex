@@ -1,0 +1,81 @@
+\documentclass{resume}
+\usepackage{xeCJK}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fix-cm}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setsansfont{TeX Gyre Heros}
+\geometry{left=17mm,right=17mm,top=14mm,bottom=14mm}
+\definecolor{accent}{HTML}{244A57}
+\definecolor{muted}{HTML}{58636A}
+\definecolor{rulegray}{HTML}{CBD4D7}
+\hypersetup{pdftitle={林育祥 - 算法实习生求职简历},pdfauthor={Yuxiang Lin}}
+\pagestyle{empty}
+\setlength{\parskip}{1pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=1pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\sffamily\large\bfseries\color{accent}}{}{0pt}{}[\color{rulegray}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titleformat{\subsection}{\sffamily\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{5pt}{2pt}
+\newcommand{\detail}[1]{{\small\color{muted}#1}\par}
+\begin{document}
+\fontsize{10.5pt}{14pt}\selectfont
+\begin{minipage}[c]{0.79\textwidth}
+{\sffamily\fontsize{27pt}{32pt}\selectfont\bfseries\color{accent}林育祥}\quad
+{\large Yuxiang Lin}\par
+\vspace{5pt}
+{\sffamily\bfseries 算法实习生 - 虚拟细胞与虚拟器官方向}\par
+\vspace{4pt}
+\detail{手机：18030019183 - 微信：LenisLin\_1218}
+\detail{邮箱：\href{mailto:linyuxiang@stu.xmu.edu.cn}{linyuxiang@stu.xmu.edu.cn}}
+\detail{主页：\href{https://lenislin.github.io/}{lenislin.github.io} - GitHub：\href{https://github.com/LenisLin}{github.com/LenisLin}}
+\end{minipage}\hfill
+\begin{minipage}[c]{28mm}
+\centering
+\includegraphics[width=27mm,height=36mm,keepaspectratio]{林育祥 24520220157280.jpg}
+\end{minipage}
+
+\section*{个人概述}
+厦门大学计算生物学与生物信息学博士在读，研究聚焦单细胞与空间组学、图像-基因多模态建模及扰动响应基准评估。主导 Chem2Gen-Bench 与 ST-Align 的研究设计及主要实现，具备从生物学问题定义到计算方法实现与实验分析的研究经验。
+
+\section*{教育背景}
+\datedsubsection{厦门大学 - 健康医疗大数据研究院}{2022-2027（预计）}
+计算生物学与生物信息学博士在读\par
+\detail{导师：Rongshan Yu - GPA：3.75}
+\datedsubsection{厦门大学 - 生命科学学院}{2018.09-2022.06}
+生物学学士
+
+\section*{代表项目}
+\datedsubsection{Chem2Gen-Bench - 化学-遗传扰动响应基准评估}{2026}
+\detail{主导研究设计与主要实现 - 第一作者 - arXiv 预印本}
+\begin{itemize}
+\item 面向化学扰动与遗传扰动之间的关联评估，设计并实现扰动响应空间中的 chemical-to-genetic translation 基准。
+\item 围绕共同靶点，评估两类扰动响应谱的一致性及适用条件，承担项目主要研究与实验分析工作，形成化学-遗传扰动关联研究的基准评估框架。
+\end{itemize}
+\detail{论文：\href{https://arxiv.org/abs/2606.21109}{arxiv.org/abs/2606.21109}}
+
+\datedsubsection{ST-Align - 空间转录组多尺度图像-基因建模}{2026}
+\detail{主导研究设计与主要实现 - 第一作者}
+\detail{ICLR 2026 Workshop on Foundation Models for Science}
+\begin{itemize}
+\item 面向空间转录组的图像-基因联合建模，设计并实现基于 spot-niche 对齐的多尺度建模方法。
+\item 将空间位点与局部组织生态位纳入建模，开展方法实现与实验分析，研究组织上下文与分子表达之间的关联，形成研究论文与公开代码。
+\end{itemize}
+\detail{代码：\href{https://github.com/dumbgoos/ST-Align}{github.com/dumbgoos/ST-Align}}
+
+\section*{其他相关成果}
+\begin{itemize}
+\item \textbf{TiRank - Genome Medicine，2026 - 第一作者}\\
+面向临床生物标志物发现，优先识别肿瘤微环境中的表型相关生态位。
+\item \textbf{HyperST - CVPR 2026 Spotlight - 共同通讯作者}\\
+面向空间转录组预测的层级双曲学习方法。
+\item \textbf{scRank - Briefings in Bioinformatics，2023 - 共同第一作者}\\
+从结直肠癌单细胞转录组识别预后相关亚群与个体化复发风险特征。
+\end{itemize}
+
+\section*{技术与研究能力}
+\textbf{编程与建模：}Python、PyTorch、R；计算方法开发、空间转录组预测、图像-基因多模态建模。\par
+\textbf{生物数据与分析：}单细胞与空间转录组、多组学整合、扰动响应基准评估、肿瘤微环境与生物标志物分析。\par
+\textbf{科研沟通：}英文论文阅读与写作；英语 CET-6。
+\end{document}

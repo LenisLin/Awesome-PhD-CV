@@ -1,0 +1,93 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=1.35cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+
+\setmainfont{TeX Gyre Heros}
+\setsansfont{TeX Gyre Heros}
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{accent}{HTML}{17324D}
+\definecolor{muted}{HTML}{5F6B76}
+\definecolor{rulegray}{HTML}{D8DEE5}
+\definecolor{bodytext}{HTML}{1F2933}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.25em,topsep=0.2em}
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}
+  {0pt}
+  {}
+  [\vspace{-0.25em}\color{rulegray}\titlerule]
+\titlespacing*{\section}{0pt}{0.8em}{0.45em}
+
+\newcommand{\tagline}[1]{\textcolor{muted}{\large #1}}
+\newcommand{\role}[1]{\textbf{\color{bodytext}#1}}
+\newcommand{\venue}[1]{\textcolor{muted}{#1}}
+\newcommand{\pubitem}[3]{%
+  \textbf{#1}\hfill\venue{#3}\\
+  #2\par\vspace{0.35em}
+}
+
+\begin{document}
+
+{\Huge\bfseries\color{accent} Yuxiang Lin}\\[0.3em]
+\tagline{Ph.D. Candidate in Computational Biology and Bioinformatics}\\
+\tagline{Xiamen University \quad | \quad Expected 2027}\\[0.55em]
+{\large Seeking 2027 postdoc / research fellow / research scientist interview opportunities}\\
+{\large Preferred regions: \textbf{Singapore} and \textbf{North America}}\\[0.45em]
+\textcolor{muted}{Public profile: \href{https://lenislin.github.io/}{https://lenislin.github.io/}}
+
+\vspace{0.8em}
+\color{rulegray}\hrule
+\vspace{0.75em}
+\color{bodytext}
+
+\section*{Research Fit}
+\begin{tabularx}{\textwidth}{>{\bfseries\color{accent}}p{0.24\textwidth} X}
+Spatial transcriptomics &
+Foundation modeling and predictive learning for spatial molecular profiles, with emphasis on tissue context and image-gene alignment.\\[0.45em]
+Tumor microenvironment &
+Computational discovery of clinically relevant niches, recurrence-risk signatures, and translational biomarkers.\\[0.45em]
+Biomedical AI agents &
+Tool-augmented biomedical research workflows involving literature-aware reasoning, multimodal evidence integration, and automated analysis.\\[0.45em]
+Multi-omics medicine &
+Integration of single-cell, spatial, transcriptomic, proteomic, and imaging data for disease mechanism discovery.
+\end{tabularx}
+
+\section*{Selected Work}
+\pubitem{ST-Align}
+{Multi-scale image-gene foundation modeling for spatial transcriptomics via spot-niche alignment.}
+{ICLR Workshop, 2026}
+
+\pubitem{TiRank}
+{Prioritizes phenotypic niches in the tumor microenvironment for clinical biomarker discovery.}
+{Genome Medicine, 2026}
+
+\pubitem{HyperST}
+{Hierarchical hyperbolic learning for spatial transcriptomics prediction.}
+{CVPR Spotlight, 2026}
+
+\pubitem{Single-cell recurrence modeling}
+{Prioritization of prognostic-associated subpopulations and individualized recurrence-risk signatures from colorectal cancer single-cell transcriptomes.}
+{Briefings in Bioinformatics, 2023}
+
+\section*{Academic Service}
+Reviewer experience includes ICLR, CVPR, IEEE BIBM, Nature Communications, IEEE Transactions on Medical Imaging, Bioinformatics, and Briefings in Bioinformatics.
+
+\section*{What I Am Looking For}
+I am open to early discussions with labs working on computational biology, spatial omics, biomedical foundation models, clinical translation, or agentic AI systems for biomedical research. Target start time: 2027.
+
+\vfill
+{\small\textcolor{muted}{Public version for opportunity discovery. Full CV and references can be shared after mutual fit is established.}}
+
+\end{document}

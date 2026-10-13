@@ -1,0 +1,18 @@
+我目前是厦门大学 Computational Biology and Bioinformatics 方向的 Ph.D. Candidate，预计 2027 年毕业。现在想提前交流 2027 入职的 postdoc / research fellow / research scientist interview opportunities。
+
+这条笔记做成两张图：第一页是简短方向首页，第二页是脱敏公开版 CV，不直接放完整原始 CV。
+
+主要研究方向：
+1. Spatial transcriptomics 与 image-gene foundation modeling
+2. Tumor microenvironment niche discovery 与临床 biomarker discovery
+3. Single-cell / spatial / multi-omics integration for medicine
+4. Biomedical AI agents：文献感知推理、多模态证据整合、工具增强分析和科研 workflow automation
+
+目标地区：Singapore、North America。
+
+如果有相关课题组、PI、postdoc opening 或 interview opportunity，欢迎通过个人主页了解我的公开 CV 和研究工作：
+https://lenislin.github.io/
+
+完整 CV 和 references 我会在双方研究方向匹配后再进一步提供。
+
+#博士求职 #博士后 #Postdoc #ComputationalBiology #SpatialTranscriptomics #Bioinformatics #Singapore #NorthAmerica

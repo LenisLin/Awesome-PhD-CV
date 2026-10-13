@@ -1,43 +1,76 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Publications}
+\cvsection{\faBook\enskip PUBLICATION}
 
 \begin{cvparagraph}
-  \underline{Underline} denotes co-first authors or co-corresponding authors
+* co-first author; \# corresponding author.
 \end{cvparagraph}
 
+\newcommand*{\cvpub}[3]{%
+  \honordatestyle{#1} & {\fontsize{9pt}{1em}\bodyfontlight\color{text} #2} & \honorlocationstyle{#3} \\
+}
 
-\cvsubsection{International Journal}
+\cvsubsection{First/co-first/corresponding-author papers}
+\begin{cvhonors}
+  \cvpub
+    {2026}
+    {\textbf{Y. Lin}*, S. Zhou*, Y. Liu*, X. Zhang*, L. Zhang, X. Xiao, Z. Lin, X. Qin, et al., Peritumoral Niche Predicts Response to Adjuvant Combination Therapy in Colorectal Liver Metastases.}
+    {Molecular Cancer (major revision)}
 
-\input{cv/publication_journals.tex}
+  \cvpub
+    {2026}
+    {\textbf{Y. Lin}, L. Luo, Y. Chen, X. Zhang, Z. Wang, R. Yu, ST-Align: Multi-Scale Image-Gene Foundation Modeling for Spatial Transcriptomics via Spot-Niche Alignment.}
+    {ICLR Workshop}
 
-\cvsubsection{International Conference}
+  \cvpub
+    {2026}
+    {\textbf{Y. Lin}\#, Z. Huang*, Z. Lin*, Y. Lin*, J. Song*, et al., TiRank prioritizes phenotypic niches in tumor microenvironment for clinical biomarker discovery.}
+    {Genome Medicine}
 
-\input{cv/publication_conf.tex}
+  \cvpub
+    {2026}
+    {C. Zhang, Y. An, Y. Chen, H. Li, X. Ling, L. Liu, J. He, \textbf{Y. Lin}\#, Z. Wang, R. Yu, HyperST: Hierarchical Hyperbolic Learning for Spatial Transcriptomics Prediction.}
+    {CVPR Spotlight}
 
+  \cvpub
+    {2023}
+    {M. Tong*, \textbf{Y. Lin}*, W. Yang, J. Song, Z. Zhang, J. Xie, et al., Prioritizing prognostic-associated subpopulations and individualized recurrence risk signatures from single-cell transcriptomes of colorectal cancer.}
+    {Brief. Bioinform.}
+\end{cvhonors}
 
-%\begin{pubSubsectionNum}{International Conference Proceedings}
-%  \item \bibentry{jeon-2023-iccv}
-%  \item \bibentry{lee-2023-iccv}
-%  \item \bibentry{seo-2023-iros}
-%  \item \bibentry{lim-2023-rss}
-%  \item \bibentry{lim-2022-orora}
-%  \item \bibentry{lee-2022-volumetric}
-%  \item \bibentry{lee-2022-patchpp}
-%  \item \bibentry{hu-2022-ecdt}
-%  \item \bibentry{lim-2022-pago}
-%  \item \bibentry{lim-2022-quatro}
-%  \item \bibentry{sungwon-2021-bmvc}
-%  \item \bibentry{hyungyu-2021-iros}
-%  \item \bibentry{eungchang-2021-iros}
-%  % 2020
-%  \item \bibentry{htlim-2020-iros}
-%  \item \bibentry{htlim-2020-iccas}
-%  \item \bibentry{htlim-2019-iros}
-%  \item \bibentry{jmkoo-2019-iccas}
-%  \item \bibentry{jieumhyun-2019-ur}
-%  \item \bibentry{htlim-2018-rita}
-%  \item \bibentry{htlim-2018-iros}
-%\end{pubSubsectionNum}
-%
+\cvsubsection{Contributing-author papers}
+\begin{cvhonors}
+  \cvpub
+    {2026}
+    {Y. Chen, C. Ma, Q. Li, F. Yan, Y. Chen, T. Li, J. Ye, M. Hu, \textbf{Y. Lin}, et al., SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types.}
+    {\href{https://doi.org/10.1038/s43018-026-01220-4}{Nature Cancer}}
+
+  \cvpub
+    {2025}
+    {Y. Chen, J. Xie, \textbf{Y. Lin}, Y. Song, W. Yang, R. Yu, BioMTAN: A Biological Knowledge-guided Multi-task Attention Network for Co-enhanced Cancer Diagnosis and Prognosis.}
+    {IEEE JBHI}
+
+  \cvpub
+    {2025}
+    {Y. Chen, J. Xie, \textbf{Y. Lin}, Y. Song, C. Zhang, W. Yang, R. Yu, SurvMamba: State Space Model with Multi-Grained Multi-Modal Interaction for Survival Prediction.}
+    {IEEE BIBM}
+
+  \cvpub
+    {2024}
+    {J. Xie, Y. Chen, S. Luo, W. Yang, \textbf{Y. Lin}, L. Wang, X. Ding, M. Tong, R. Yu, Tracing unknown tumor origins with a biological-pathway-based transformer model.}
+    {Cell Rep. Methods}
+
+  \cvpub
+    {2024}
+    {M. Tong, S. Luo, L. Gu, X. Wang, Z. Zhang, C. Liang, H. Huang, \textbf{Y. Lin}, J. Huang, SIMarker: Cellular similarity detection and its application to diagnosis and prognosis of liver cancer.}
+    {Comput. Biol. Med.}
+\end{cvhonors}
+
+\cvsubsection{Preprints}
+\begin{cvhonors}
+  \cvpub
+    {2026}
+    {\textbf{Y. Lin}, Y. Chen, Chem2Gen-Bench: Benchmarking Chemical-to-Genetic Translation in Perturbation Response Space.}
+    {\href{https://arxiv.org/abs/2606.21109}{arXiv:2606.21109}}
+\end{cvhonors}
